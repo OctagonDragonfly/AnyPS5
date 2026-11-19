@@ -4,7 +4,7 @@ Tool for automatic executables porting to Linux and Windows.
 
 ![anyps5_collage1](https://github.com/user-attachments/assets/ed2f0b2d-33d3-46d7-ab88-767ca872fc99)
 
-Includes a [relinker](core/relinker) that converts executable to the target system's native format and implementations of [system prx libraries](core/libs/prx) suitable for dynamic linking. No emulation or separate runtime process.
+Includes a [relinker](core/relinker) that converts executable to the target system's native format and implementations of system prx libraries suitable for dynamic linking. No emulation or separate runtime process.
 
 ## Download
 
@@ -21,7 +21,7 @@ Includes a [relinker](core/relinker) that converts executable to the target syst
 
 ![progress map](https://boykopovar.github.io/AnyPS5/progress.svg)
 
-<sub>* System libraries: percentage of the functions known to the project so far (declared in [core/libs/prx](core/libs/prx)), not of every PS5 system function. The total grows as more functions are declared.</sub>
+<sub>* System libraries: percentage of the functions known to the project so far, not of every PS5 system function. The total grows as more functions are declared.</sub>
 
 Unsupported or unexpected states throw a C++ exception, usually `std::runtime_error`. An exception that nothing catches prints its `what()` to stderr and ends the process.
 
